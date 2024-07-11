@@ -78,3 +78,31 @@ button {
     margin: 1%;
     border-radius: 7px;
 }
+
+
+
+.navbar {
+    margin-left: 500px;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    display: inline; 
+  }
+  
+  .navbar a {
+    color: #2c3556;
+    padding: 20px;
+    font-size: 30px; 
+    text-decoration: underline; 
+  }
+  
+  .navbar a:hover {
+    background-color: #cdd5df;
+    color: rgb(0, 0, 0);
+  }
