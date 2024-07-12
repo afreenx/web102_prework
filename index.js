@@ -56,8 +56,13 @@ function addGamesToPage(games) {
 }
 
 // call the function we just defined using the correct variable
-addGamesToPage(GAMES_JSON);
+//addGamesToPage(GAMES_JSON); REMOVED THIS so I don't have all the games
 // later, we'll call this function using a different list of games
+    const fundedGames = GAMES_JSON.filter((games) => {
+        return games.pledged >= games.goal;
+    });
+    //console.log("# funded:", fundedGames.length);
+    addGamesToPage(fundedGames);
 
 
 /*************************************************************************************
@@ -133,6 +138,8 @@ function showAllGames() {
     addGamesToPage(GAMES_JSON);
 
 }
+
+
 
 // select each button in the "Our Games" section
 const unfundedBtn = document.getElementById("unfunded-btn");
